@@ -1,0 +1,85 @@
+/* Documentation
+
+Version  1.0.0
+Author  Stépahne D
+Date création 13/11/2020
+
+
+
+*/
+
+/* Global */
+
+html{
+    
+
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.2rem ;
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(./images/bmw-5665352_1920.jpg);
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0,0.2);;
+    
+}
+.sidebar1{
+    float: left;
+    flex: 1 0px;
+    background-color: rgba(0,0,0,0.2);;    
+    
+}
+.sidebar2{
+    display: flex;
+    width: 20%;
+    
+}
+.body{
+    display: flex;
+    flex: 4 0px;
+    height: 1100px;
+    float: right;  
+   
+    
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0,0,0,0.2);    
+    width: 100%;
+    height: 90px;
+}
+a:link {
+    text-decoration: none;
+}    
+a, a:hover{
+    color: black;
+}
+
+/* footer */
+
+.m-0-flex{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+/*@media  (max-width:1280px) {
+
+
+}*/
