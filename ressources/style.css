@@ -11,11 +11,7 @@ Site BMW Cars Fan Club
 /* Global */
 
 
-*{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}
+
 html{
     
 
@@ -38,11 +34,14 @@ h1, h2, h3, h4{
     height: 61px;
     margin-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center; 
     flex-direction: row;
-    background-color: rgba(0,0,0,0.1);
-     
+    background-color: rgba(0,0,0,0.1);    
+}
+.bgc-index3{
+    
+    background-color: rgba(0,0,0,0.3);  
 }
 .header a{
     
@@ -78,10 +77,18 @@ h1, h2, h3, h4{
     color: azure;
     box-shadow: 0 0 5px azure, 0 0 25px azure,0 0 50px azure,0 0 200px azure;
 }
-
 a span{
     position: absolute;
     display: block;
+}
+
+.rotation img:hover{
+   
+    transform: rotate(2160deg) ;
+    transition: all 2s;
+}
+.rotation a{
+    font-size: 15px;
 }
 .color-1{
     color: #4599FE;
@@ -92,6 +99,7 @@ a span{
 .color-3{
     color: #EE0405;
 }
+
 
 
 /* sidebar 1 */
@@ -127,7 +135,7 @@ a span{
 #menu-accordeon li li {
      max-height:0;
      overflow: hidden;
-     transition: all .5s;
+     transition: all 0.5s;
      border-radius:0;
      background: #4445;
      box-shadow: none;
@@ -176,14 +184,7 @@ a span{
 .p-img-10{
     padding-top: 20px
 }
-.align-link li{
-    
-    line-height: 40px;
-    width: 80%;
-    color: azure;
-    font-size: 25px;
-    
-}
+
 /* sidebar 2 */
 
 .sidebar2{
@@ -219,6 +220,158 @@ a, a:hover{
     color: azure;
 }
 
+/* Connectez-vous */
+
+.connexion{
+    
+    width: 100%;
+    height: 1280px;
+    margin: 0 auto;
+    
+    
+    background-image:linear-gradient(rgba(85, 185, 38, 0.1),rgba(130, 138, 130, 0.4)) ,url(./images/18596261454_a1c05ef919_k.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+input{
+    outline: none;
+}
+#wrapper{
+    
+   width: 100%;
+   height: 1140px;
+   margin: 0 auto;
+   
+   
+}
+#box{   
+    position: fixed;
+    left: 10%;
+    top: 30%;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(58, 51, 51, 0.4);
+    border: none;
+    border-radius: 30px;
+    color: azure;
+}
+.btn-envoyer{
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    font-family: 'DM Serif Text';
+    background: linear-gradient(to right, blue, white); 
+}
+/* série 5 */
+
+.série5{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+    
+    
+}
+.série5 img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.série5 img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.position-size{
+    display: flex;
+    justify-content: center;
+}
+.style-motor{
+    color: azure;
+    background:linear-gradient(to right,#4599FE,#031E49,#EE0405);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.m-0{
+    margin: 0 auto; 
+}
+.section-vlad{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-vlad img{
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+.size-text{
+    width: 400px;
+}
+.size-text p{
+    font-size: 20px;
+}
+.separation::before{
+    display: block;
+    width: 500px;
+    height: 4px;
+    content: "";
+    background:linear-gradient(to right,#4599FE,#031E49,#EE0405);
+    margin: 50px auto;
+    
+    
+}
+.contour{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;  
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(./images/bmw-m4-3169357_1920.jpg);
+    background-size: cover;
+}
+.photo-vlad{
+    display: fixed;
+    right: 4%;
+    top: 3%;
+    position: relative;  
+}
+.photo-vlad img{
+    border-radius: 50% ;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.photo-vlad i{
+    display: fixed;
+    position: relative;
+    font-size: 300%;
+    top: 30%;
+    right: 55%;
+    color: azure;
+}
+.descriptif{
+    display: flex;
+    flex-direction: column;
+}
+.size-pseudo{
+    display: fixed;
+    position: relative;
+    right: 60%;
+    bottom: 4%;
+    font-size: 30px;
+    color: azure;
+    padding: 5px;
+    background-color: #0009;
+    border-radius: 10px;
+    
+}
 /* footer */
 
 .m-0-flex{
@@ -226,9 +379,7 @@ a, a:hover{
     margin: 0;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;  
 }
 /*@media  (max-width:1280px) {
 
