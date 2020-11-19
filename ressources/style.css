@@ -227,8 +227,6 @@ a, a:hover{
     width: 100%;
     height: 1280px;
     margin: 0 auto;
-    
-    
     background-image:linear-gradient(rgba(85, 185, 38, 0.1),rgba(130, 138, 130, 0.4)) ,url(./images/18596261454_a1c05ef919_k.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -303,8 +301,10 @@ input{
 .section-vlad{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .section-vlad img{
+    
     width: 400px;
     height: auto;
     border-radius: 20px;
@@ -332,14 +332,15 @@ input{
     border: 2px solid black;
     border-radius: 15px;
     width: 700px;
-    height: 400px;
+    height: 380px;
     margin: 0 auto;
     background-image: url(./images/bmw-m4-3169357_1920.jpg);
     background-size: cover;
+    box-shadow: 5px 5px 5px black;
 }
 .photo-vlad{
     display: fixed;
-    right: 4%;
+    right: 26%;
     top: 3%;
     position: relative;  
 }
@@ -353,24 +354,64 @@ input{
     position: relative;
     font-size: 300%;
     top: 30%;
-    right: 55%;
+    right: 60%;
     color: azure;
 }
 .descriptif{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
 }
 .size-pseudo{
-    display: fixed;
-    position: relative;
-    right: 60%;
-    bottom: 4%;
-    font-size: 30px;
-    color: azure;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
     padding: 5px;
-    background-color: #0009;
+    border: 2px solid black;
     border-radius: 10px;
+}
+.italique{
+    font-style: italic;
+    font-weight: bold;
+}
+.size-pseudo p{
+    margin: 0 ;
+}
+
+.color-vlad{
+    color: red;
+    font-size: 25px;
+}
+.text-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom: 40px;
+}
+/* section Z4 */
+
+.m-top-40{
+    margin-top: 40px;
+}
+.video-center{
+    display: flex;
+    justify-content: center;
     
+}
+.contour2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;  
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 750px;
+    height: 450px;
+    margin: 0 auto;
+    background-image: url(./images/Z4/z4-sombre.png);
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
 }
 /* footer */
 
@@ -381,7 +422,96 @@ input{
     flex-wrap: wrap;
     justify-content: space-around;  
 }
-/*@media  (max-width:1280px) {
+.footer3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: #0008;    
+    width: 100%;
+    height: 90px;
+    color: azure;
+    font-size: 15px;
+}
+@media  (max-width:900px) {
+    div{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        width: 100%;
+    }
+    .header{
+        height: 280px;
+    }
+    .size-text{
+        
+        position: relative;
+        width: 100%;
+    }
+    .descriptif{
+        width: 80%;
+    }
+    .style-motor{
+        width:40%;
+    }
+    form .text-area{       
+        width: 100px;
+    }
+    .header a{
+    
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 10px ;    
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: 0.5s;
+        background: rgba(0,0,0,0.0);
+        letter-spacing: 4px;
+        -webkit-box-reflect: below 1px linear-gradient(transparent,#00000001);
+        margin-top: 10px;
+    }
+    .contour2{
+        width:500px;
+        height:325px ;
+    }
+    .contour2 img{
+        width: 100px;
+        height: 100px;
+    }
+    .contour2 i{
+        width:10px;
+        height:10px ;
+    }
+    
 
-
-}*/
+}
+@media  (max-width:800px) {
+    .style-motor{
+        width:60%;
+    }
+    
+}    
+@media  (max-width:650px) {
+    .style-motor{
+        width:65%;   
+    }
+ 
+}  
+@media  (max-width:550px) {
+    .style-motor{
+        width:80%;
+    }
+    iframe{
+        width: 400px;
+        height: 225px;
+    }
+}  
+@media  (max-width:450px) {
+   
+    .style-motor{
+        width:100%;
+    }
+}      
